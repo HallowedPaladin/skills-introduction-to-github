@@ -12,3 +12,25 @@ totaliq = 0
 for iq in collectiveiqGomdi:
     totaliq = totaliq + iq
 print(f"\n The collective IQ of gomdi is {totaliq:.1f}")
+
+#this is a nested for loop for creating shapes (right angled triangles)
+for i in range(5):
+    for i in range (i+1):
+        print("*",end=' ')
+    print()
+
+choice = ''
+
+while choice == '':
+    print("1. Add\n2. Subtract\nq. Quit")
+    choice = input()
+    choice = int(choice)
+
+    if choice == 1:
+        value1 = 0
+        value2 = 0
+        result = 0
+        value1 = input("What is the first value?\n")
+        value2 = input("What is the second value?\n")
+        result = value1 + value2
+        print(f"Your sum is: {result:.1f}")
